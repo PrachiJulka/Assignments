@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="GradleAssignment_classesDir" target="1.8" />
+      <module name="GradleAssignment_dependencies" target="1.8" />
+      <module name="GradleAssignment_jar" target="1.8" />
+      <module name="GradleAssignment_jav" target="1.8" />
+      <module name="GradleAssignment_java" target="1.8" />
+      <module name="GradleAssignment_java1" target="1.8" />
+      <module name="GradleAssignment_java2" target="1.8" />
+      <module name="GradleAssignment_main" target="1.8" />
+      <module name="GradleAssignment_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
