@@ -3,14 +3,14 @@ version '1.0'
 
 
 apply plugin: 'java'
-/* Q6 apply from: 'tasks.gradle'*/
+apply from: 'tasks.gradle'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    maven{url "http://central.maven.org/maven2/"}
+    //Q5 maven{url "http://central.maven.org/maven2/"}
 }
 
 
@@ -62,14 +62,9 @@ sourceSets {
 
 
 
-dependencies {
-
-    compile 'org.apache.commons:commons-lang3:3.0'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-
-}
 
 
+/*Q4
 task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
     from files(sourceSets.main.output.classesDir)
     from configurations.runtime.asFileTree.files.collect { zipTree(it) }
@@ -78,7 +73,7 @@ task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
         attributes 'Main-Class': 'Demo'
     }
 }
-
+*/
 
 
 
@@ -90,7 +85,7 @@ task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
 
 
 //Q2
- /*sourceSets {
+ sourceSets {
      jav
      java2
      main {
@@ -111,7 +106,7 @@ task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
      }
 
 
- }*/
+ }
 /*dependencies {
 
   compile 'org.apache.commons:commons-lang3:3.0'
@@ -119,3 +114,9 @@ task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
 
 }*/
 
+dependencies {
+
+    //compile 'org.apache.commons:commons-lang3:3.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+}

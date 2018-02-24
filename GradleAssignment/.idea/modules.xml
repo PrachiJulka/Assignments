@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleAssignment.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleAssignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleAssignment_jar.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleAssignment_jar.iml" group="GradleAssignment" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleAssignment_jav.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleAssignment_jav.iml" group="GradleAssignment" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleAssignment_java2.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleAssignment_java2.iml" group="GradleAssignment" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleAssignment_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleAssignment_main.iml" group="GradleAssignment" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GradleAssignment_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GradleAssignment_test.iml" group="GradleAssignment" />
     </modules>
