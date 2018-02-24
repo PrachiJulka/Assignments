@@ -6,8 +6,9 @@ import java.util.List;
 public class Demo {
     public static void main(String[] args) {
     //    Demo1.method();
-        String str="Hello";
-        System.out.println(str);
+       Demo1.display();
+/*        String str="Hello";
+        System.out.println(str);*/
 
     }
 }

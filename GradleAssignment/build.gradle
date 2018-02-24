@@ -59,14 +59,8 @@ repositories {
 //    }
 //}
 
+/*
 
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Jar File Example',
-                'Implementation-Version': version,
-                'Main-Class': 'Demo'
-    }
-}
 
 dependencies {
 
@@ -74,6 +68,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
 }
+*/
 
 /* Q-4 task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
     from files(sourceSets.main.output.classesDir)
@@ -94,26 +89,33 @@ dependencies {
 
 
 
-/*Q2
+//Q2
  sourceSets {
-   jav
-   java2
-    main {
-     java {
-         srcDir 'src/main/java'
-         srcDir 'src/main/java1'
+     jav
+     java2
+     main {
+         java {
+             srcDir 'src/main/java'
+             srcDir 'src/main/java1'
+         }
+
      }
+     jar {
+         from sourceSets.jav.output
+         from sourceSets.java2.output
+         manifest {
+             attributes 'Implementation-Title': 'Gradle Jar File Example',
+                     'Implementation-Version': version,
+                     'Main-Class': 'Demo'
+         }
+     }
+
 
  }
- jar {
-     from sourceSets.jav.output
-     from sourceSets.java2.output
-     manifest {
-         attributes 'Implementation-Title': 'Gradle Jar File Example',
-                 'Implementation-Version': version,
-                 'Main-Class': 'Demo'
-     }
- }*/
+dependencies {
 
+//    compile 'org.apache.commons:commons-lang3:3.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
 
+}
 
