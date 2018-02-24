@@ -14,35 +14,35 @@ repositories {
 }
 
 
-//Q3
-//sourceSets {
-//    jav
-//    java1
-//
-//    main {
-//        resources{
-//            exclude "**/*.txt"
-//        }
-//        java {
-//            srcDir "src/main/java"
-//            srcDir "src/main/java1"
-//        }
-//    }
-//
-//    jar {
-//        from ('src/main/resources') {
-//            include '**/*.xml'
-//        }
-//        manifest {
-//            attributes 'Implementation-Title': 'Gradle Jar File Example',
-//                    'Implementation-Version': version,
-//                    'Main-Class': 'Demo'
-//        }
-//
-//    }
+
+sourceSets {
+    jav
+    java1
+
+    main {
+        resources {
+            exclude "**/*.txt"
+        }
+        java {
+            srcDir "src/main/java"
+            srcDir "src/main/java1"
+        }
+    }
+
+    jar {
+        from('src/main/resources') {
+            include '**/*.xml'
+        }
+        manifest {
+            attributes 'Implementation-Title': 'Gradle Jar File Example',
+                    'Implementation-Version': version,
+                    'Main-Class': 'Demo'
+        }
+
+    }
 
 
-
+}
 
 
 //sourceSets {
@@ -90,7 +90,7 @@ dependencies {
 
 
 //Q2
- sourceSets {
+ /*sourceSets {
      jav
      java2
      main {
@@ -111,7 +111,7 @@ dependencies {
      }
 
 
- }
+ }*/
 dependencies {
 
 //    compile 'org.apache.commons:commons-lang3:3.0'
